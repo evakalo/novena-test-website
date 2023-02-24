@@ -319,7 +319,7 @@ button {
   color: var(--clr-secondary);
   background-color: white;
   width: 100%;
-  padding: 10px;
+  padding: 15px;
   font-size: 14px;
   font-weight: var(--fnt-bold);
 }
@@ -341,19 +341,22 @@ button {
 .dates p {
   margin: 0;
 }
-
+.footer {
+  border-top: 1px solid var(--clr-secondary);
+  margin: 20;
+  padding: 0;
+  padding-top: 40px;
+}
 .footer-container {
   display: flex;
   width: 75%;
-  border: 1px solid black;
   margin: 0 auto;
-  padding: 0;
   align-items: center;
-  justify-content: space-around;
+  justify-content: baseline;
 }
 .museum-info {
   display: grid;
-  padding: 20px;
+  padding: 0;
 }
 .museum-info ul {
   list-style: none;
@@ -385,6 +388,7 @@ button {
 .newsletter-text {
   margin: 0;
   width: 100%;
+  padding-top: 10px;
 }
 .newsletter h5 {
   font-family: 14px;
@@ -392,12 +396,16 @@ button {
   margin: 0;
 }
 .checkbox {
-  padding: 5px;
+  padding: 15px;
   align-self: auto;
 }
 .conditions {
   font-size: 12px;
-  padding: 5px;
+  padding-top: 10px;
+}
+.conditions a {
+  color: var(--clr-darker);
+  text-decoration: underline;
 }
 .button-newsletter {
   background-color: var(--clr-secondary);
@@ -418,8 +426,20 @@ button {
 }
 .copyright-footer {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-evenly;
+  align-items: baseline;
+  background-color: #3c3835;
+  padding: 0;
+  margin: 0;
+}
+.copyright-footer h5 {
+  color: white;
+}
+.copy-legal {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 60px;
 }
 
 .wrapper-main {
