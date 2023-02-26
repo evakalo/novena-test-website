@@ -28,7 +28,7 @@ const title = document.getElementById("text");
 console.log(text);
 
 title.innerText = items[0].text;
-photo.src = items[1].image;
+photo.src = items[0].image;
 
 const buttonPrev = document.getElementById("slider-button-prev");
 const buttonNext = document.getElementById("slider-button-next");
