@@ -12,13 +12,15 @@
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.24/dist/css/uikit.min.css" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://kit.fontawesome.com/ce626f63a6.css" crossorigin="anonymous">
     <title>NMZ</title>
   </head>
   <body>
           <div class="background-container">
+           <div> <image src="" alt="Andy Warhol painting of Marilyn Monroe" id="photo"></image></div>
             <header class="header-box">
                   <div class="logo-div">
-     <img src="../images/Logo_nas_rucno_crtani 2-01.jpg" alt="logo" class="logo" /> 
+     <a href="../src/index.html"> <img src="../images/Logo_nas_rucno_crtani 2-01.jpg" alt="logo" class="logo" /></a>
             </div> 
     
     <div class="right-flex-header">
@@ -39,8 +41,7 @@
       <div class="social-media-logo ">  
       <div class="social-media">
         <a href=""><img src="../images/social-media.png" /></a>
-        <!-- <a href=""><img src="image destination" /></a>
-        <a href=""><img src="image destination" /></a> -->
+       
       </div>
       <div class="right-header">
         <img src="../images/kneževa palača logo-01.png" />
@@ -49,8 +50,15 @@
 </div>
       <nav class="nav">
         <ul class="nav_list ">
+          <div class="dropdown">
           <li class="nav-list-item">
-            <a href="" class="nav-link">O muzeju</a>
+            <a href="" class="nav-link">
+           O muzeju </a>
+ <div class="dropdown-content " >
+    <a href="history.html">Povijest muzeja</a>
+    <a href="#">Radno vrijeme</a>
+  </div>
+           </div>
           </li>
           <li class="nav-list-item">
             <a href="" class="nav-link">Sastavne jedinice</a>
@@ -74,29 +82,51 @@
 
 
     <main class="main">
-      <section class="slider-wrap">
-        <div class="slide">
-         <figure class="slide-vector-left"><img src="../images/Vector-left.png"/></figure>
-       <div class="slide-text"> <h5>ZBIRKA ODJELA NMZ-a</h5>
-        <h2>Najotrovnije zmije svijeta od <br >18. lipnja do 31. kolovoza 2018.</h2></div>
-   <figure class="slide-vector-right"> <img src="../images/Vector-right.png"/></figure>  </div>     </div>
-     <!-- <div class="slide">
-        <h5>ZBIRKA ODJELA NMZ-a</h5>
-        <h2>lorem ipsum 2</h2>
+
+<div class="slider-wrapper" data-slider>
+
+  <div class="slider-nav" id="slider-navigation">
+  <!-- <button class="slide-indicator"></button>
+  <button class="slide-indicator current-slide data-active">
+  </button>
+  <button class="slide-indicator">
+  </button>
+  <button class="slide-indicator">
+  </button>
+  <button class="slide-indicator"></button> -->
+</div>
+<ul class="slider-track" data-slides>
+  <li class="slide current-slide" data-active><button class="slider-button " id="slider-button-prev" data-slider-button="prev"><img src="../images/Vector-left.png" alt=""></button><div class="slide-text">
+         <h5>ZBIRKA ODJELA NMZ-a</h5>
+        <h2 id="text">
+          <!-- Najotrovnije zmije svijeta od 18. lipnja do 31. kolovoza 2018. -->
+        </h2>
       </div>
-     <div class="slide">
-        <h5>ZBIRKA ODJELA NMZ-a</h5>
-        <h2>lorem ipsum 3.</h2>
+  <button class="slider-button " id="slider-button-next" data-slider-button="next"><img src="../images/Vector-right.png" alt=""></button></li>
+   <!-- <li class="slide" ><button class="slider-button slider-button-prev"><img src="../images/Vector-left.png" alt=""></button><div class="slide-text">
+         <h5>ZBIRKA ODJELA NMZ-a</h5>
+        <h2> Izložba Art deco od 2. veljače do 31. srpnja 2018.</h2>
       </div>
-     <div class="slide">
-        <h5>ZBIRKA ODJELA NMZ-a</h5>
-        <h2>lorem ipsum 4</h2>
+  <button class="slider-button" data-slider-button="next"><img src="../images/Vector-right.png" alt=""></button></li>
+   <li class="slide"><button class="slider-button" data-slider-button="prev"><img src="../images/Vector-left.png" alt=""></button><div class="slide-text">
+         <h5>ZBIRKA ODJELA NMZ-a</h5>
+        <h2>Izložba Ivan Mažuranić od 23. lipnja do 20. kolovoza 2018.</h2>
       </div>
-     <div class="slide">
-        <h5>ZBIRKA ODJELA NMZ-a</h5>
-        <h2>lorem ipsum 5</h2>
-      </div> -->
-    </section>
+  <button class="slider-button" data-slider-button="next"><img src="../images/Vector-right.png" alt=""></button></li> 
+  <li class="slide" ><button class="slider-button" data-slider-button="prev"><img src="../images/Vector-left.png" alt=""></button><div class="slide-text">
+         <h5>ZBIRKA ODJELA NMZ-a</h5>
+        <h2>Izložba Nove Tendencije od <br >2. svibnja do 31. kolovoza 2019.</h2>
+      </div>
+  <button class="slider-button" data-slider-button="next"><img src="../images/Vector-right.png" alt=""></button></li>
+   <li class="slide" ><button class="slider-button" data-slider-button="prev"><img src="../images/Vector-left.png" alt=""></button><div class="slide-text">
+         <h5>ZBIRKA ODJELA NMZ-a</h5>
+        <h2>Žene Bauhausa u Hrvatskoj <br >28. srpnja do 1. studenog 2018.</h2>
+      </div>
+  <button class="slider-button" data-slider-button="next"><img src="../images/Vector-right.png" alt=""></button></li> -->
+   
+</ul>
+</div>
+
       <main class="wrapper-center">
         <article class="welcome-info">
           <h3 class="title-museum-desc">Dobrodošli!</h3>
@@ -109,10 +139,11 @@
             </article>
           <div class="visit-info-box">
             <h3>Posjetite nas</h3>
+            <ul>
             <a href=""><img src="../images/gdje-smo.png" /></a>
-            <a href=""><img src="image destination" />Audio vodič</a>
-            <a href=""><img src="image destination" />Info</a>
-          </div>
+            <a href="">  <img src="../images/audio-guide.svg" /></a>
+            <a href=""><img src="../images/info.svg" /></a>
+                  </ul>   </div>
         
       </main>
       <div class="news-box">
@@ -232,9 +263,9 @@
           <h5 class="design uk-width-1-5">Izrada NOVENA</h5>
         </div>
       
-  
- 
 
+ 
+<script src="index.js"></script>
 
   </body>
 </html>
